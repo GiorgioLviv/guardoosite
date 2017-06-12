@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Guardoo - Billing</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/billing.css">
+	<link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+	<div class="row col-16 header-flex">
+		<header>
+			<div class="logo"><img src="IMG/logo.png"></div>
+			<div class="greeting">
+				<span>Welcome back, Kim-Jong-un!</span>
+				<div class="profileFoto" >
+					<img src="IMG/whatsapp.png" alt="Profile foto">
+				</div>
+				<span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+			</div>
+		</header>
+	</div>
+	<div class="row col-16 flex-wrapper">
+		<aside class="col-1">
+			<nav>
+				<a href="create-server.html"><i class="fa fa-server fa-2x" aria-hidden="true"></i>Server</a>
+				<a href="#" class="active-icon"><i class="fa fa-globe fa-2x" aria-hidden="true"></i>Domain</a>
+				<a href="#"><i class="fa fa-shield fa-2x" aria-hidden="true"></i>Firewall</a>
+				<a href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>Support</a>
+				<a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i>Affiliate</a>
+				<a href="billing.html"><i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>Billing</a>
+			</nav>
+		</aside>
+		<div class="background-div col-15"> 
+			<div class="form-header col-14">
+					<h1>Create New Instance</h1>
+					<a href="#" class="active-menu-item">Profile</a><a href="#">API</a>
+			</div>
+			<div class="content-div col-14">
+				<div class="form-place col-8">
+						<h2>Your Details</h2>
+						<form>
+							<div class="input-2-group col-16">
+								<label for="fName"><input type="text" name="fName" id="fName" placeholder="First Name"></label><label for="lName"><input type="text" name="lName" id="lName" placeholder="Last Name"></label>
+							</div>
+							<label for="email1"><input type="email" name="email" id="email1" placeholder="E-Mail" class="col-16"></label>
+							<label for="passwordOriginal"><input type="password" name="passwordOriginal" id="passwordOriginal" placeholder="Current Password" class="col-16"></label>
+							<label for="passwordNew"><input type="password" name="passwordNew" id="passwordNew" class="col-16" placeholder="New Password" disabled></label>
+							<label for="passwordNewConfirm"><input type="password" name="passwordNewConfirm" id="passwordNewConfirm" class="col-16" placeholder="Confirm New Password" disabled></label>
+							<label for="passwordHMAC"><input type="password" name="passwordHMAC" id="passwordHMAC" class="col-16" placeholder="Time-based HMAC One Time Password"></label>
+							<div class="formgroup col-16">
+										<div class="input-3-group">
+											<label for="secretKey"><input type="text" name="secretKey" id="secretKey" class="formgroup-item" placeholder="Secret Key" disabled></label>
+											<label for="passwordTime"><input type="password" name="passwordTime" id="passwordTime" class="formgroup-item" placeholder="One-time Password" disabled></label>
+											<label for="save"><input type="submit" name="save" id="save" class="formgroup-item" value="Save"></label>
+										</div>
+										<image src="IMG/qrcode.png" class="qrcode" alt="QRcode">
+							</div>
+							<label for="recoveryEmail"><input type="email" name="recoveryEmail" id="recoveryEmail" class="col-16" placeholder="Recovery E-Mail" disabled></label>
+							<label for="phone"><input type="tel" name="phone" id="phone" class="col-16" placeholder="Phone number"></label>
+							<label for="address"><input type="text" name="address" id="address" class="col-16" placeholder="Address" disabled></label>
+							<label for="addressLine"><input type="text" name="addressLine" id="addressLine" class="col-16" placeholder="Address (line 2)" disabled></label>
+							<div class="input-7-group col-16">
+								<label for="city"><input type="text" name="city" id="city" placeholder="City" disabled></label><label for="ZIP"><input type="text" name="ZIP" id="ZIP" placeholder="ZIP Code" disabled></label><label for="state"><input type="text" name="state" id="state" placeholder="State" disabled></label><label for="country1"><input type="text" name="country" id="country1" placeholder="country" disabled></label><label for="timezone"><input type="text" name="timezone" id="timezone" placeholder="timezone" disabled></label><label for="company"><input type="text" name="company" id="company" placeholder="Company" disabled></label><label for="VAT"><input type="text" name="VAT" id="VAT" placeholder="VAT Number (EU only)" disabled></label>
+							</div>
+							<label for="update"><input type="submit" name="update" id="update" class="col-16" value="Update Details"></label>
+							<span class="deactivate"><a id="deactivate">Deactivate account</a></span>
+						</form>	
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

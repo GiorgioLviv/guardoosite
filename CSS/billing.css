@@ -1,0 +1,31 @@
+/*billing-form-choose styling*/
+.input-2-group,
+.input-7-group {
+    margin: 0;
+    padding: 0;
+}
+
+#ZIP,
+#VAT,
+#state {
+    min-width: calc(50% - 7.5px);
+}
+
+.input-7-group input#ZIP {
+    margin-right: 0;
+}
+
+input#city,
+input#company,
+input#state,
+input#country1 {
+    margin-right: 15px;
+}
+
+div.input-7-group input#country1 {
+    width: calc(31.25% - 15px);
+}
+
+input#timezone {
+    width: calc(18.75% - 7.5px);
+}

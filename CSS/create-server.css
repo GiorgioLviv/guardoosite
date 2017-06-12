@@ -1,0 +1,517 @@
+
+/*Page content rules*/
+.h2-wrapper {
+    display: block;
+    margin-bottom: 14px;
+    margin-top: 54px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+/*Tooltip CSS rules*/
+
+.tooltip {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    opacity: 0.35;
+    border-radius: 2px;
+    line-height: 20px;
+    background-color: #8fbbd8;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18.5px;
+    font-weight: bold;
+    margin-left: 14px;
+}
+/*Hover and active visual effects*/
+.OS:hover {
+    border: 1px solid #2980b9;
+}
+.system:hover i,
+.system:hover .sys-name,
+.system:hover .pseudoselect {
+    color: #2980b9;
+}
+.system:hover .pseudoselect {
+    border-top-color: #2980b9;
+}
+.system:hover .dropdown-content {
+    display: block;
+    border: 1px solid #2980b9;
+}
+.tooltip:hover,
+.OS:hover,
+.price-rate:hover {
+    cursor: pointer; 
+    border-color: #2980b9;   
+}
+.price-rate:hover .rate-month {
+    background-color: #edf8ff;
+    border-color: #2980b9;
+}
+.price-rate:hover .rate-month .euro-hour {
+    color: #8fbbd8;
+}
+.price-rate:hover .memory-traffic span {
+    color: #8fbbd8;
+}
+.price-rate:hover .rate-month span,
+.price-rate:active .rate-month span,
+.price-rate:hover .memory-traffic span b,
+.price-rate:active .memory-traffic span b {
+    color: #2980b9;    
+}
+
+/*end of hover&active visual effects*/
+.image-selection {
+    padding-left: 60px;
+}
+
+.image-selection li {
+    display: inline-block;
+    border-top: 1px solid #e6e6e6;
+}
+.image-selection li a {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 14px;
+    color: #bbbbbb;
+}
+
+li.active-up a {
+    border-top: 2px solid #2980b9;
+    color: #2980b9;
+}
+
+/*Blue-label CSS rules*/
+.blue-label {
+    display: inline-block;
+    position: relative;
+    height: 22px;
+    background-color: #2980b9;
+    padding: 0 5px;
+    line-height: 22px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.features span.blue-label {
+    color: #ffffff;
+    font-size: 11px;
+    text-align: center;
+    margin-left: 20px;
+    font-weight: 900;
+}
+.blue-label:before {
+    content: "\A";
+    border-style: solid;
+    border-width: 11px 11px 11px 0;
+    border-color: transparent #2980b9 transparent transparent;
+    position: absolute;
+    left: -11px;
+}
+
+/*First option CSS rules*/
+.flexy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 40px 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.option-1 {
+    display: block;   
+}
+.OS {
+    display: inline-block;
+    width: 158px;
+    border: 1px solid #e6e6e6;
+    margin: 0 25px 90px 0;
+}
+.system {
+    display: inline-block;
+    position: relative;
+    height: 98px;
+    width: 100%;
+    text-align: center;
+    padding-top: 13px;
+}
+.pseudoselect {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.9;
+    color: #bbbbbb;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    top: 127px;
+    left: -1px;
+    width: 158px;
+    z-index: 1000;
+    border: solid 1px #e6e6e6;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.dropdown-content a {
+    color: #bbbbbb;
+    text-decoration: none;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #8fbbd8;
+}
+.dropdown-content a:hover {
+    color: #2980b9;
+    background-color: #8fbbd8;
+}
+i {
+    display: inline-block;
+    margin-bottom: 12px;
+    vertical-align: middle;
+    color: #e6e6e6;
+}
+
+.pseudoselect i {
+    color: #bbbbbb;
+}
+.sys-name {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #999999;
+    margin-bottom: 14px;
+}
+.sys-version {
+    padding: 0 30px;
+    line-height: 20px;
+}
+/*Second option CSS rules*/
+.country {
+    display: inline-block;
+    width: 158px;
+    height: 118px;
+    border: solid 1px #e6e6e6;
+    margin: 0 25px 0 0;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.0;
+    text-align: center;
+    color: #999999;
+}
+.country img {
+    display: inline-block;
+    width: 69px;
+    height: 42px;
+    opacity: 75%;
+    padding: 0;
+    margin-bottom: 17px;
+}
+.country span {
+    margin: 0;
+    padding: 0;
+}
+/*Third option CSS rules*/
+.price-rate {
+    display: inline-block;
+    width: 158px;
+    border: 1px solid #e6e6e6;
+    margin: 0 25px 26px 0;
+    text-align: center;
+}
+.rate-month {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e6e6e6;
+}
+.memory-traffic {
+    padding: 22px 0 24px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999999;
+    line-height: 1.5;
+}
+b {
+    font-weight: 900;
+}
+.rate-month {
+    font-size: 18px;
+    color: #2980b9;
+    padding: 18px;
+}
+.euro-month-1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 0.48;
+    color: #2980b9;
+}
+.euro-month-2 {
+    font-size: 10px;
+    color: #2980b9;
+}
+.euro-hour {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    color: #999999;
+}
+/*Fourth option CSS rules*/
+.features {
+    display: block;
+    margin: 0 0 0 60px;
+}
+.features a {
+    font-size: 14px;
+    color: #2980b9;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.features span {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #999999;
+}
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 5px;
+    padding: 0;
+    display: none;
+}
+input[type="checkbox"] + label {
+    cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border: 3px solid #e6e6e6;
+    border-radius: 2px;
+    margin: 17px 14px 17px 0;
+    vertical-align: middle;
+}
+input[type="checkbox"]:checked + label:before {
+    border-color: #2980b9;
+    border: 3px solid #2980b9;
+    width: 14px;
+    height: 14px;
+    background-image: url('../IMG/arrow.svg');
+    background-size: 14px 11px;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    background-color: #2980b9;
+    vertical-align: middle;
+}
+
+/*Fifth option CSS rules*/
+/*Table CSS rules*/
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #999999;
+}
+.key00,
+.table-date,
+th {
+    border-bottom: 1px solid #e6e6e6;
+    text-align: left;
+}
+.empty-td {
+    padding: 0 13px;
+}
+.table-date,
+th {
+    padding-left: 42px;
+}
+
+/*Button CSS rules*/
+
+a.add-key {
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    border-radius: 2px;
+    background-color: #2980b9;
+    
+}
+a.add-key span {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 40px;
+    padding: 0;
+    font-weight: bold;
+}
+
+a span.plus {
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 14px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+/*Fifth option Names and Number CSS rules*/
+/*Counter CSS rules*/
+
+.counter {
+    display: inline-block;
+    padding: 0;
+    width: 200px;
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 36px;
+    color: #bbbbbb;
+    font-size: 13px;
+    margin-left: 60px;
+    margin-top: 40px;
+    vertical-align: top;
+}
+
+.counter-server {
+    display: inline-block;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    height: 34px;
+    width: 112px;
+}
+.counter a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: #2980b9;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+}
+.enter-server {
+    display: inline-block;
+    max-width: 700px;
+    margin-left: 15px;
+}
+.enter-server input {
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    width: 285px;
+    height: 36px;
+    margin: 0 15px 15px 0;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+hr {
+    border: none;
+    color: #e6e6e6;
+    background-color: #e6e6e6;
+    height: 1px;
+}
+
+.create {
+    display: inline-block;
+    height: 40px;
+    max-width: 585px;
+    border-radius: 2px;
+    background-color: #2980b9;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    padding: 0;
+}
+
+
+
+/*Round number CSS rules*/
+
+.number {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    margin-left: 21px;
+    margin-right: 13px;
+    font-size: 18px;
+    font-weight: 300;  
+    text-align: center;
+    color: #e6e6e6;
+}
+
+/*monthly-rate-below styling*/
+
+.create-monthly {
+    display: block;
+    padding: 0;
+    margin: 65px 0 840px 60px;
+}
+.month-rate-below {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 59px 0 44px;
+}
+.monthly-big {
+    color: #2980b9;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+.monthly-euro {
+    color: #2980b9;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.monthly-small {
+    color: #2980b9;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 300;
+}
+.hourly-small {
+    line-height: 10px;
+    font-size: 10px;
+    color: #999999;
+}

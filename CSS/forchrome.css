@@ -1,0 +1,48 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+ul.progress-bar1 li::after {
+  content: "";
+  position: absolute;
+  bottom: 2px !important;
+  left: 6px;
+  background: #e6e6e6;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  z-index: 3000;
+}
+
+ul.progress-bar li::after {
+  content: "";
+  position: absolute;
+  bottom: 5px !important;
+  left: 27px;
+  background: #2980b9;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  z-index: 3000;
+}
+ul.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 1px;
+  background: #2980b9;
+  width: 740px;
+  height: 3px;
+  z-index: 1;
+}
+.dots-description li:nth-child(1):after {
+  left: 42px;
+}
+.dots-description li:nth-child(2):after {
+  left: 82px;
+}
+.dots-description li:nth-child(3):after {
+  left: 73px;
+}
+.dots-description li:nth-child(4):after {
+  left: 70px;
+}
