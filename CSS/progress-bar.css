@@ -45,7 +45,7 @@ h1 {
     margin: 0 0 0 20px;
     white-space: nowrap;
 }
-.span-container span {
+.span-container a span {
     font-size: 11px;
     font-weight: 300;
     text-align: center;
@@ -61,6 +61,10 @@ h1 {
 .span-container span:last-child {
   margin-right: 60px;
 } 
+.span-container a {
+  text-decoration: none;
+  color: white;
+}
 .grayline {
   position: relative;
   width: 744px;
@@ -232,10 +236,25 @@ ul.dots-description {
   left: 67px;
 }
 
+/*footer of progress-bar container*/
+
 .add-site-form {
   display: block;
   padding: 37px 80px;
 }
+.add-dns-form {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.blue-button,
+.input-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+
 .add-site-form h2 {
   display: inline-block;
   margin: 0 0 24px 0;
@@ -247,11 +266,11 @@ ul.dots-description {
 }
 .add-site-form input {
   border: 1px solid #b4b4b4;
-  height: 27px;
+  height: 29px;
   width: 528px;
   border-radius: 2px;
   padding: 0 13px;
-  margin-right: 20px;
+  margin: 0 20px 0 0;
 }
 .add-dns {
   display: inline-block;
@@ -264,5 +283,227 @@ ul.dots-description {
   font-size: 12px;
   text-decoration: none;
 }
+/*end of footer*/
 
+@media only screen and (max-width: 1028px) {
+  .progressbar-wrapper {
+    margin-left: 20px;
+  }
+  .progress {
+    width: 760px;
+  }
+  .bar-container,.under-bar {
+    width: 758px;
+  }
+  .dots-description li:nth-child(1) {
+    width: 100px;
+    margin-right: 101px;
+  }
+  .dots-description li:nth-child(2) {
+    width: 100px;
+    margin-right: 105px;
+  }
+  .dots-description li:nth-child(2):after {
+    left: 45px;
+  }
+  .dots-description li:nth-child(3) {
+    width: 100px;
+    margin-right: 105px;
+  }
+  .dots-description li:nth-child(3):after {
+    left: 45px;
+  }
+  .dots-description li:nth-child(4) {
+    width: 90px; 
+  }
+  .dots-description li:nth-child(4):after {
+    left: 45px;
+  }
+  .span-container a span {
+      margin-right: 20px;
+  }
+  .span-container a span:last-child {
+    margin-right: 100px;
+  } 
+  .blueline {
+    position: absolute;
+    top: 220px;
+    left:147px;
+    width: 740px;
+  }
+  ul.progress-bar1::after {
+    width: 674px;
+  }
+  ul.progress-bar::after {
+    width: 670px;
+  }
+  ul.progress-bar li,
+  ul.progress-bar1 li {
+    margin: 0 185px 0 0;
+  }
+  .add-dns-form {
+    margin: 0;
+    padding: 0;
+  }
 
+  .add-site-form input {
+    width: 100%;
+  }
+  .input-wrapper {
+    width: calc(75% - 15px);
+    margin-right: 15px; 
+    vertical-align: middle;
+  }
+  .blue-button {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .progressbar-wrapper {
+    margin-left: 20px;
+  }
+  .progress {
+    width: 660px;
+  }
+  .bar-container,.under-bar {
+    width: 658px;
+  }
+  .dots-description li:nth-child(1) {
+    width: 100px;
+    margin-right: 61px;
+  }
+  .dots-description li:nth-child(2) {
+    width: 100px;
+    margin-right: 65px;
+  }
+  .dots-description li:nth-child(2):after {
+    left: 45px;
+  }
+  .dots-description li:nth-child(3) {
+    width: 100px;
+    margin-right: 65px;
+  }
+  .dots-description li:nth-child(3):after {
+    left: 45px;
+  }
+  .dots-description li:nth-child(4) {
+    width: 90px; 
+  }
+  .dots-description li:nth-child(4):after {
+    left: 45px;
+  }
+  .bar-container .span-container a span {
+      margin-right: 0px;
+  }
+  .bar-container .span-container a:last-child span {
+    margin-right: 45px;
+  }
+  .blueline {
+    position: absolute;
+    top: 220px;
+    left:147px;
+    width: 640px;
+  }
+  ul.progress-bar1::after {
+        width: 574px;
+  }
+  ul.progress-bar::after {
+    width: 570px;
+  }
+  ul.progress-bar li,
+  ul.progress-bar1 li
+   {
+    margin: 0 145px 0 0;
+  }
+  /*add-dns-form*/
+  .add-site-form input {
+    width: 100%;
+  }
+  .add-site-form input,
+  .add-site-form a {
+    height: 40px;
+    vertical-align: middle;
+  }
+  .add-site-form a {
+    line-height: 40px;
+  }
+  .blue-button {
+    display: inline-block;
+  }
+
+  /*Add-site-form input and button*/
+
+@media only screen and (max-width: 768px) {
+  .progress {
+    width: 87.5%;
+  }
+  .bar-container,
+  .under-bar {
+    width: 100%;
+  }
+  .bar-container {
+    height: auto;
+    padding: 25px;
+  }
+  .span-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+            flex-direction: column;
+    margin: 0;
+    white-space: nowrap;
+  }
+  .blueline,
+  .grayline {
+    display: none;
+  }
+  .span-container a {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin: 15px 0;
+  }
+  .span-container a span  {
+    margin: 0; 
+  }
+  .span-container a:hover  {
+    background-color: #2980b9; 
+  }
+  .bar-container .span-container a:last-child span {
+    margin-right: 0px;
+  }
+  ul.dots-description {
+    display: none;
+  }
+  .add-site-form {
+    padding: 37px 20px;
+  }
+  .add-site-form h2 {
+    display: block;
+    margin: 0 auto 24px auto;
+    text-align: center;
+  }
+  .add-site-form input {
+    margin: 0 0 20px 0;
+  }
+  .input-wrapper {
+    margin-right: 0;
+  }
+  .blue-button,
+  .input-wrapper {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
+    div.add-site-form {
+      padding: 37px 20px;
+    }
+}

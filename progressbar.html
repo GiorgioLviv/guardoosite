@@ -35,18 +35,17 @@
 		</aside>
 		<div class="minor-flex col-15">
 			<div class="background-div">
-			<div class="progressbar-wrapper">
-				
+			<div class="progressbar-wrapper">				
 					<h1>Add Websites</h1>
 					<div class="progress">
 						<div class="bar-container">
 							<div class="span-container">
-								<span>Add Website</span>
-								<span>Add DNS Record</span>
-								<span>Select Plan</span>
-								<span>Update Nameserver</span>
+								<a href="#"><span>Add Website</span></a>
+								<a href="#"><span>Add DNS Record</span></a>
+								<a href="#"><span>Select Plan</span></a>
+								<a href="#"><span>Update Nameserver</span></a>
 							</div>
-							<div class="greyline">
+							<div class="grayline">
 								<ul class="progress-bar1">
 								    <li></li>
 								    <li></li>
@@ -72,10 +71,11 @@
 							</ul>
 							<div class="add-site-form">
 								<h2>Add Your Website</h2>
-								<label for="add-site">
-									<input type="text" name="emails" id="add-site" placeholder="Enter comma-sperated domain names (example1.com, example2.com)">
-								</label>
-								<a href="#" class="blue-button add-dns">Scan DNS Records</a>
+								<div class="add-dns-form">
+									<div class="input-wrapper"><label for="add-site"><input type="text" name="emails" id="add-site" placeholder="Enter comma-sperated domain names (example1.com, example2.com)">
+									</label>
+									</div><div class="blue-button"><a href="#" class="add-dns">Scan DNS Records</a></div>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -7,6 +7,8 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 * {
 	-webkit-box-sizing: border-box;
@@ -47,6 +49,7 @@ input {
 	border: solid 1px #e6e6e6;
 	margin-bottom: 11px;
 	padding-left: 16px;
+	overflow: hidden;
 }
 /*header styling*/
 header {
@@ -65,33 +68,35 @@ header {
 .logo {
 	margin-top: 17px;
 	padding-left: 22px;
+	width: 139px;
+	height: 45px;
 }
 .greeting {
 	display: inline-block;
-	margin-top: 15px;
 	margin-right: 10px;
+	margin-left: 10px;
 	font-family: Raleway;
+	max-height: 55px;
+	padding: 15px 0;
   	font-size: 12px;
   	line-height: 1.58;
   	text-align: left;
   	color: #bbbbbb;
-} 
-.profileFoto {
-	height: 40px;
-	width: 40px;
-	display: inline-block;
-	border: solid 1px #e6e6e6;
-	border-radius: 38px;
 }
-.profileFoto img {
+.profileFoto {
+	display: inline-block;
 	width: 38px;
 	height: 38px;
+	vertical-align: middle;
+	border: solid 1px #e6e6e6;
+	border-radius: 50%;
 }
 .greeting span {
-	vertical-align: top;
+	vertical-align: middle;
 	display: inline-block;
-	padding-top: 15px;
-	padding-bottom: 12px;
+}
+.greeting i {
+	margin-top: 5px;
 }
 /*end of header styling*/
 div.content-div {
@@ -109,7 +114,6 @@ div.content-div {
 }
 /*Aside navigation CSS rules*/
 aside {
-	background-color: #fffffF;
 	min-width: 84.3px;
 }
 nav {
@@ -124,6 +128,7 @@ nav a {
 	font-weight: 300;
 	text-align: center;
 	color: #a7a7a7;
+	border-right: 2px solid #ffffff;
 }
 nav a i{
 	display: inline-block;
@@ -143,8 +148,10 @@ nav a:hover,
 nav a:hover i {
 	color: #2980b9;
 }
+
 nav a:hover {
 	border-right: 2px solid #2980b9;
+	
 }
 
 /*Background CSS rules*/
@@ -377,4 +384,106 @@ span.deactivate {
  	url('../Raleway/Raleway-ThinItalic.ttf') format('truetype');
  font-weight: normal;
  font-style: normal;
+}
+@media only screen and (max-width: 980px) {
+	.logo img {
+		width: 100%;
+		height: auto;
+		margin-right: 10px;
+	}
+	.profileFoto img {
+		width: 100%;
+		height: auto;
+	}
+	div.content-div {
+		width: 93.75%;
+		margin: 0 auto auto 25px;
+	}
+	div.form-place {
+		width: 87.5%;
+	}
+	.form-header{
+		margin: 0 25px;
+	}
+	.formgroup .input-3-group {
+		width: 100%;
+	}
+	.formgroup {
+		flex-wrap: wrap;
+		justify-content: initial;
+		padding: 0;
+	}
+	.qrcode {
+		margin: 5px auto 16px auto;
+	}
+	input#city,
+	input#country {
+		width: 100%;
+		margin-right: 0;
+	}
+	input#company,
+	input#VAT,
+	input#ZIP,
+	#state,
+	#timezone,
+	#currency {
+		min-width: calc(50% - 7.5px);
+	}
+	input#city,
+	input#ZIP,
+	input#company {
+		margin-right: 15px;
+	}
+	
+}
+@media only screen and (max-width: 600px) {
+
+	div.content-div {
+		width: 93.75%;
+		margin: 0 auto auto 10px;
+	}
+	div.form-place {
+		width: 87.5%;
+	}
+	.form-header{
+		margin: 0 10px;
+	}
+	input#fName,
+	input#lName {
+		width: 100%;
+	}
+	aside {
+		min-width: 70px;
+	}
+	nav {
+	display: block;
+	margin: 35px 0;	
+	}
+	nav a {
+		height: 60px;
+		font-size: 11px;
+		line-height: 11px;
+	}
+	nav a i{
+		margin: 0 auto -10px auto;
+	}
+	input#company,
+	input#VAT {
+		width: calc(50% - 7.5px);
+	}
+}
+@media only screen and (max-width: 360px) {
+	.logo {
+		padding-left: 5px;
+	}
+	.profileFoto {
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+	}
+	.profileFoto img {
+		width: 19px;
+		height: 19px;
+		vertical-align: middle;
+	}
 }

@@ -22,10 +22,39 @@ input#country1 {
     margin-right: 15px;
 }
 
-div.input-7-group input#country1 {
+input#country1 {
     width: calc(31.25% - 15px);
 }
 
-input#timezone {
+#timezone1 {
     width: calc(18.75% - 7.5px);
+}
+@media only screen and (max-width: 980px) {
+	.form-place input#ZIP,
+	.form-place input#state {
+		width: 100%;
+	}
+	input#country1 {
+		width: calc(65% - 15px);
+	}
+	input#timezone1 {
+		min-width: 35%;
+	}
+}
+@media only screen and (max-width: 768px){
+	input#company,
+	input#VAT {
+		width: calc(50% - 7.5px);
+	}
+	input#company {
+		margin-right: 15px;
+	}
+}
+@media only screen and (max-width: 392px) {
+	input#company,
+	input#VAT, 
+	input#country1,
+	input#timezone1 {
+		width: 100%;
+	}
 }
